@@ -21,22 +21,36 @@
         </div>
     </div>
     <div>
-        <h1 id="transaction-area">Transaction Area</h1>
+        <h1 id="transaction-area">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="deposit status">
+                        <h5>Deposit</h5>
+                        <h2>$00</h2>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="withdraw status">
+                        <h5>Withdraw</h5>
+                        <h2>$00</h2>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="balance status">
+                        <h5>Balance</h5>
+                        <h2>$1240</h2>
+                    </div>
+                </div>
+            </div>
+        </h1>
     </div>
     <script>
-        // const loginBtn = document.getElementById("login");
-        // loginBtn.addEventListener("mouseleave", function(){
-        //     const loginArea = document.getElementById("login-area");
-        //     loginArea.style.display= "none";
-        //     const transactionArea = document.getElementById("transaction-area");
-        //     transactionArea.style.display = "block";
-        // })
         const loginBtn = document.getElementById("login");
-        loginBtn.addEventListener("click", function(){
+        loginBtn.addEventListener("mouseleave", function(){
             const loginArea = document.getElementById("login-area");
-            loginArea.style.display = "none";
+            loginArea.style.display= "none";
             const transactionArea = document.getElementById("transaction-area");
-            transactionArea.style.display = "block"
+            transactionArea.style.display = "block";
         })
     </script>
 </body>
